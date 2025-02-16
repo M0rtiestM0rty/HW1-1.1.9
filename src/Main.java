@@ -1,15 +1,36 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+/*
+1.1.9
+String s = "";
+for (int n = N; n > 0; n /= 2)
+s = (n % 2) + s;
+*/
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
-    }
-}
+public class Main
+{
+    public static void main(String[] args)
+    {
+        int N = 10;
+        String s = "";
+
+        for(int n = N; n > 0; n /= 2)
+        {
+            s = (n % 2) + s;
+        }//end for lop
+    System.out.println("Binary number: " + s);
+
+        Binary.toBinary();
+
+    }//end main
+}//end class
+
+//using toStringBinary
+class Binary
+{
+    public static void toBinary()
+    {
+        int n = 10;
+        String binary = Integer.toBinaryString(n);
+        System.out.println("Binary Number: " + binary);
+
+    }//end toBinary
+}//end Binary
